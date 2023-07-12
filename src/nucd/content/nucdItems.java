@@ -6,22 +6,16 @@ import mindustry.type.*;
 public class nucdItems {
 
     public static Item
-        /* Base Materials */
-        uranium, plutonium,
-        /* Products */
-        plutonium239, radioalloy, salt, uranium235, uranium238, uraniumEnriched, uraniumDepleted, uraniumDepletedAmmo, uraniumFuel;
+         plutonium, plutonium239, radioalloy, salt, uranium, uranium235, uranium238, uraniumEnriched, uraniumDepleted, uraniumDepletedAmmo, uraniumFuel, sucker;
     public static void load() {
-        /* Base Materials */
-        uranium = new Item("uranium", Color.valueOf("32CD32")){{
+        uranium  = new Item("uranium", Color.valueOf("32CD32")){{
             radioactivity = 0.75f;
             hardness = 4;
-        }};        
+        }};       
         plutonium = new Item("plutonium", Color.valueOf("FF0000")){{
             radioactivity = 0.9f;
             hardness = 4;
         }};
-
-        /* Products*/
         plutonium239 = new Item("plutonium239", Color.valueOf("FF0000")){{
             radioactivity = 0.9f;
         }};
